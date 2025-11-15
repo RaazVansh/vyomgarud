@@ -1,0 +1,48 @@
+/* ----------------------------- */
+/* Global Fonts */
+/* ----------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ----------------------------- */
+/* Tailwind Base Layers */
+/* ----------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------- */
+/* Reset and Global Styles */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ----------------------------- */
+/* Custom Utilities */
+/* ----------------------------- */
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #ff7b00 0%, #ffaa00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Background Glow */
+.hero-gradient {
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 123, 0, 0.15) 0%,
+    transparent 70%
+  );
+}
